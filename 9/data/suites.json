@@ -1,0 +1,61 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Login Feature test",
+    "children" : [ {
+      "name" : "I want to test the login page (example #1)",
+      "uid" : "3ea46c19bde76f47",
+      "parentUid" : "8fbb09887aebb3e5ae328c7996ddafab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674258474363,
+        "stop" : 1674258475903,
+        "duration" : 1540
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "I want to test the login page (example #2)",
+      "uid" : "c016d28578e75381",
+      "parentUid" : "8fbb09887aebb3e5ae328c7996ddafab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674258475917,
+        "stop" : 1674258477028,
+        "duration" : 1111
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "I want to test the login page (example #3)",
+      "uid" : "73ef43910d9aaa49",
+      "parentUid" : "8fbb09887aebb3e5ae328c7996ddafab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674258477035,
+        "stop" : 1674258478112,
+        "duration" : 1077
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "I want to test the login page (example #4)",
+      "uid" : "eda867d9c22356af",
+      "parentUid" : "8fbb09887aebb3e5ae328c7996ddafab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1674258478135,
+        "stop" : 1674258484349,
+        "duration" : 6214
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8fbb09887aebb3e5ae328c7996ddafab"
+  } ],
+  "name" : "suites"
+}
