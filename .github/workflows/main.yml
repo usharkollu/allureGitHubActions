@@ -16,7 +16,7 @@ jobs:
         run: npm install -g allure-commandline --save-dev && npm i -D @shelex/cypress-allure-plugin
       
       - name: Generate Report
-        run: npm run posttest
+        run: npm run test
 
       - name: Upload Report
         uses: actions/upload-artifact@v2
