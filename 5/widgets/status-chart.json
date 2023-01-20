@@ -1,0 +1,41 @@
+[ {
+  "uid" : "544dd2a4e6b64540",
+  "name" : "I want to test the login page (example #1)",
+  "time" : {
+    "start" : 1674255859490,
+    "stop" : 1674255860738,
+    "duration" : 1248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "613b8da9f7be6539",
+  "name" : "I want to test the login page (example #3)",
+  "time" : {
+    "start" : 1674255861657,
+    "stop" : 1674255862633,
+    "duration" : 976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ffa215be666961f",
+  "name" : "I want to test the login page (example #2)",
+  "time" : {
+    "start" : 1674255860748,
+    "stop" : 1674255861650,
+    "duration" : 902
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9b82c2028dd8a97",
+  "name" : "I want to test the login page (example #4)",
+  "time" : {
+    "start" : 1674255862653,
+    "stop" : 1674255869009,
+    "duration" : 6356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
