@@ -23,11 +23,14 @@ jobs:
         with:
           name: cucumber-allure-report
           path: /home/runner/work/allureGitHubActions/allureGitHubActions/allure-report
-          
-      - name: Get Allure history
+
+       - name: Get Allure history
         uses: actions/checkout@v3.3.0
         if: always()
-        uses: afiore/action-allure-report@v0.1.0
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Allure Report with history
         uses: simple-elf/allure-report-action@v1.6
@@ -40,9 +43,10 @@ jobs:
           allure_history: allure-history
           keep_reports: 20
 
-      - name: Deploy report to Github Pages
+       - name: Deploy report to Github Pages
         if: always()
-        uses: ad-m/github-push-action@master
-        with:
-            github_token: '${{ secrets.GITHUB_TOKEN }}'
-            force: true
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
