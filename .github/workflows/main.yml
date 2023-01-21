@@ -1,5 +1,8 @@
 name: Cypress Testing in git
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '55 * * * *'  # At 01:00 on Mondays.
 jobs:
   CypressTest:
     runs-on:  ubuntu-latest
