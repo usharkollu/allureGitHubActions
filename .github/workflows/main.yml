@@ -27,10 +27,7 @@ jobs:
       - name: Get Allure history
         uses: actions/checkout@v3.3.0
         if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
+        uses: afiore/action-allure-report@v0.1.0
 
       - name: Allure Report with history
         uses: simple-elf/allure-report-action@v1.6
@@ -45,18 +42,7 @@ jobs:
 
       - name: Deploy report to Github Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
-          
-      #- name: Post the link to the report
-     # if: always()
-      #  uses: Sibz/github-status-action@v1
-       # with: 
-       #     authToken: ${{secrets.GITHUB_TOKEN}}
-        #    context: 'Test report'
-        #    state: 'success'
-        #    sha: ${{ github.event.pull_request.head.sha }}
-         #   target_url: usharkollu.io/github-allure-history/${{ github.run_number }}
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: '${{ secrets.GITHUB_TOKEN }}'
+            force: true
