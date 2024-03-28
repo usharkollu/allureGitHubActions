@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Mar 28 19:35:33 GMT 2024","Thu Mar 28 19:35:34 GMT 2024","1122","","Login Feature test","","","","I want to test the login page (example #1)",""
+"passed","Thu Mar 28 19:35:35 GMT 2024","Thu Mar 28 19:35:36 GMT 2024","751","","Login Feature test","","","","I want to test the login page (example #3)",""
+"passed","Thu Mar 28 19:35:36 GMT 2024","Thu Mar 28 19:35:42 GMT 2024","5923","","Login Feature test","","","","I want to test the login page (example #4)",""
+"passed","Thu Mar 28 19:35:34 GMT 2024","Thu Mar 28 19:35:35 GMT 2024","798","","Login Feature test","","","","I want to test the login page (example #2)",""
